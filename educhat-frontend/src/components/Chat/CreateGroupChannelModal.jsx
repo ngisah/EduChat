@@ -1,3 +1,10 @@
+import { useState, useEffect } from 'react';
+import Modal from '../common/Modal';
+import { AlertTriangle, X } from 'lucide-react';
+import { useChat } from '../../contexts/chatContext';
+import { useAuth } from '../../contexts/authContext';
+import Avatar from '../common/Avatar';
+import LoadingSpinner from '../common/LoadingSpiner';
 const CreateGroupChannelModal = ({ onClose }) => {
     const { createGroupChannel, searchUsers, userSearchResults, setUserSearchResults, isCreatingChannel } = useChat();
     const { user } = useAuth();
@@ -125,3 +132,4 @@ const CreateGroupChannelModal = ({ onClose }) => {
         </Modal>
     );
 };
+export default CreateGroupChannelModal;

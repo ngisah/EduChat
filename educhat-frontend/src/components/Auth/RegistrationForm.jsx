@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Eye } from 'lucide-react';
+
+import { useAuth } from '../../contexts/authContext';
 const RegistrationForm = ({ onSwitchToLogin }) => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');

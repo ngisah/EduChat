@@ -18,6 +18,7 @@ export const authService = {
   },
   register: async (fullName, email, password, role) => {
     console.log('Mock register attempt:', fullName, email, role);
+    
     // ... (rest of register logic)
     return Promise.resolve({
       user: { id: 'newuser123', fullName, email, role, profilePictureUrl: `https://placehold.co/100x100/D0D0D0/606060?text=${fullName.charAt(0)}` },

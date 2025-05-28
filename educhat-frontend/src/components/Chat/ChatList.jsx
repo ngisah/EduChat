@@ -3,7 +3,11 @@ import { useChat } from '../../contexts/chatContext';
 import { useAuth } from '../../contexts/authContext';
 import ChatListItem from './ChatListItem';
 import { useEffect, useRef } from 'react';
-import { Search } from 'lucide-react';
+import CreateGroupChannelModal from './CreateGroupChannelModal';
+import Avatar from '../common/Avatar';
+import { Search, Users } from 'lucide-react';
+
+import LoadingSpinner from '../common/LoadingSpiner';
 const ChatList = ({ isMobileNavOpen }) => {
   const { channels, activeChannelId, selectChannel, loadingChannels, searchUsers, userSearchResults, setUserSearchResults, createDirectMessageChannel, createGroupChannel } = useChat();
   const { user } = useAuth();
