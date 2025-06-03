@@ -1,0 +1,20 @@
+# Virtual Environment
+venv/
+
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Environment variables
+.env
+
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# Django media files (if you don't want to track user uploads in git)
+# media/
+
+# Static files build output
+# staticfiles_build/
