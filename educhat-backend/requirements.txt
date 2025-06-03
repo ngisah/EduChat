@@ -1,0 +1,10 @@
+Django==5.2.1  # The core web framework for building the application.
+djangorestframework==3.15.2  # A powerful and flexible toolkit for building Web APIs.
+channels==4.2.2  # Enables support for WebSockets, chat protocols, IoT protocols, and more, extending Django's capabilities beyond HTTP.
+channels-redis==4.2.1  # Provides a Redis channel layer backend for Django Channels, enabling message passing between consumers.
+daphne==4.1.2  # An HTTP, HTTP2 and WebSocket protocol server for ASGI (Asynchronous Server Gateway Interface), used to run Django Channels.
+psycopg2-binary==2.9.10  # A PostgreSQL adapter for Python, allowing Django to connect to a PostgreSQL database. The "-binary" version includes pre-compiled C extensions.
+python-dotenv==1.1.0  # Reads key-value pairs from a .env file and can set them as environment variables, useful for managing configuration.
+djangorestframework-simplejwt==5.5.0  # A JSON Web Token authentication plugin for Django REST Framework.
+Pillow==11.2.1  # A friendly fork of PIL (Python Imaging Library), used for opening, manipulating, and saving many different image file formats.
+Faker==27.1.0  # A Python package that generates fake data for you. Useful for populating databases with test data.
